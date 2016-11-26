@@ -1,467 +1,97 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html class="ks-webkit537 ks-webkit ks-chrome54 ks-chrome">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
-<title>大健康 -保健产品服务商</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<script src="js/nav.js"></script>
-
+    <meta name="renderer" content="webkit"> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">  
+    <title>大健康 -保健产品服务商</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/nav.js"></script>
 </head>
 
 <body>
-
-<div class="top">
-  <div class="logo"><img src="images/logo.jpg" /></div>  
+  <div class="top">
+       <div class="logo">
+               <img src="images/logo.jpg" />
+       </div>  
   </div>
 
-<div class="nav">
-<div class="menu1">
+  <div class="nav">
+    <div class="menu1">
       <ul id="navigation1">
-        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> <a  href="index.html" class="nav_h1">主页</a>
-          <!-- <ul>
-            <li class="nav_w1"><a href="#">栏目1->菜单1</a></li>
-            <li class="nav_w1"><a href="#">栏目1->菜单2</a></li>
-            <li class="nav_w1"><a href="#">栏目1->菜单3</a></li>
-            <li class="nav_w1"><a href="#">栏目1->菜单4</a></li>
-          </ul> -->
+        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> <a  href="index.html" class="nav_h1">首页</a>
+          
         </li>
         
-        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> <a href="customer.html" class="nav_h1">产品服务</a>
-          <!-- <ul>
-            <li class="nav_w1"><a href="#">栏目2->菜单1</a></li>
-            <li class="nav_w1"><a href="#">栏目2->菜单2</a></li>
-            <li class="nav_w1"><a href="#">栏目2->菜单3</a></li>
-            <li class="nav_w1"><a href="#">栏目2->菜单4</a></li>
-            <li class="nav_w1"><a href="#">栏目2->菜单5</a></li>
-          </ul> -->
+        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+              <div class="nav_h1_2" onclick="changeweb(this,'project1')">产品与服务</div>
+              <ul>
+                  <li class="nav_w1"><a href="http://www.djk365.com.cn/Home/Index?index_id=5" target="_blank">健康资讯</a></li>
+                  <li  class="nav_w1"><a href="http://www.djk365.com.cn/Home/Index?index_id=2" target="_blank">加盟合作</a></li>
+                  <!-- <li  class="nav_w1"><a href="#">栏目1->菜单3</a></li>
+                  <li  class="nav_w1"><a href="#">栏目1->菜单4</a></li> -->
+                </ul>
         </li>
         
-        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> <a href="http://www.djk365.com.cn/" class="nav_h1">商城</a>
-          <!-- <ul>
-            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" class="nav_w1"> <a href="#" >栏目3->菜单1</a>
-              <ul>
-                <li ><a href="#">菜单1->子菜单1</a></li>
-                <li><a href="#">菜单1->子菜单2</a></li>
-                <li ><a href="#">菜单1->子菜单3</a></li>
-                <li ><a href="#">菜单1->子菜单4</a></li>
-              </ul>
-            </li>
-            <li>
-            <li class="nav_w1"><a href="#">栏目3->菜单2</a></li>
-            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"  class="nav_w1"> <a href="#">栏目3->菜单3</a>
-              <ul>
-                <li><a href="#">菜单3->子菜单1</a></li>
-                <li><a href="#">菜单3->子菜单2</a></li>
-                <li><a href="#">菜单3->子菜单3</a></li>
-              </ul>
-            </li>
-          </ul> -->
+        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+             <a href="http://www.djk365.com.cn/" class="nav_h1" target="_blank">商城</a>
         </li>
              
-        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> <a href="about1.html" class="nav_h1">关于我们</a>
-          <ul>
-            <li class="nav_w1"><a href="xiaozhushou.html">身体质量指数</a></li>
-            <li  class="nav_w1"><a href="#">栏目1->菜单2</a></li>
-            <li  class="nav_w1"><a href="#">栏目1->菜单3</a></li>
-            <li  class="nav_w1"><a href="#">栏目1->菜单4</a></li>
-          </ul>
+        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+            <div class="nav_h1_2" onclick="changeweb(this,'about1')">关于我们</div>
         </li>
-               
-        <!-- <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> <a href="news1.html" class="nav_h1">新闻</a>
-          <ul>
+                               
+        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+          <div class="nav_h1_2" onclick="changeweb(this,'')">资料下载</div>
+          <!-- <a href="contact.html" class="nav_h1">资料下载</a> -->
+          <!-- <ul>
             <li class="nav_w1"><a href="#">栏目1->菜单1</a></li>
             <li  class="nav_w1"><a href="#">栏目1->菜单2</a></li>
             <li  class="nav_w1"><a href="#">栏目1->菜单3</a></li>
             <li  class="nav_w1"><a href="#">栏目1->菜单4</a></li>
-          </ul>
-        </li> -->
-        
-        
-        <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> <a href="contact.html" class="nav_h1">资料下载</a>
-          <ul>
-            <li class="nav_w1"><a href="#">栏目1->菜单1</a></li>
-            <li  class="nav_w1"><a href="#">栏目1->菜单2</a></li>
-            <li  class="nav_w1"><a href="#">栏目1->菜单3</a></li>
-            <li  class="nav_w1"><a href="#">栏目1->菜单4</a></li>
-          </ul>
+          </ul> -->
         </li>
-        
-        
-      </ul>
-      
-    </div>
-    </div>
-    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
-<div class="banner">
-
-
-<div class="slide banner" data-slide='{"action":"click","fn":"banner_ext","time":"8000"}'>
-	<div class="ban_c album"><a href="#"><img src="images/20140225171729652.jpg" /></a></div>
-	<div class="ban_c album"><a href="#"><img src="images/20140113173751727.jpg" /></a></div>
-	<div class="ban_c album"><a href="#"><img src="images/2013123109501990.jpg" /></a></div>
-    <div class="ban_c album"><a href="#"><img src="images/2013123109501990.jpg" /></a></div>
-</div>
-<div class="wrap bann_ext">
-	<ul class="l frontCover"></ul>
-</div>
-<script src="js/jquery.min.js" ></script>
-<script src="js/lanrenzhijia.js"></script>
-<!-- 代码部分end -->
-
-</div>
-
-<div class="m1">
-  <div class="m1_l">
- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/koala.min.1.5.js"></script>   
-<div id="fsD1" class="focus" >  
-    <div id="D1pic1" class="fPic">  
-        <div class="fcon" style="display: none;">
-            <a target="_blank" href="#"><img src="images/01.jpg" style="opacity: 1; "></a>
-           
-        </div>
-        
-        <div class="fcon" style="display: none;">
-            <a target="_blank" href="#"><img src="images/02.jpg" style="opacity: 1; "></a>
-            
-        </div>
-        
-        <div class="fcon" style="display: none;">
-            <a target="_blank" href="#"><img src="images/03.jpg" style="opacity: 1; "></a>
-            
-        </div>
-        
-        <div class="fcon" style="display: none;">
-            <a target="_blank" href="#"><img src="images/04.jpg" style="opacity: 1; "></a>
-           
-        </div>    
-    </div>
-    <div class="fbg">  
-    <div class="D1fBt" id="D1fBt">  
-        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>  
-        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
-        <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>  
-        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>  
-    </div>  
-    </div>  
-       
-</div>
-
-<script type="text/javascript">
-	Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
-	Qfast(false, 'widgets', function () {
-		K.tabs({
-			id: 'fsD1',   //焦点图包裹id  
-			conId: "D1pic1",  //** 大图域包裹id  
-			tabId:"D1fBt",  
-			tabTn:"a",
-			conCn: '.fcon', //** 大图域配置class       
-			auto: 1,   //自动播放 1或0
-			effect: 'fade',   //效果配置
-			eType: 'click', //** 鼠标事件
-			pageBt:true,//是否有按钮切换页码
-			bns: ['.prev', '.next'],//** 前后按钮配置class                          
-			interval: 3000  //** 停顿时间  
-		}) 
-	})  
-</script>
-
-
-
-    
-    </div>
-	<div class="m1_r">
-   	  <p class="m1_rt"> 北京大健康生活生物科技有限公司是一家专注于提供健康产品及健康服务的高科技公司，公司的产品涵盖营养食品、健康酒、健康茶、健康医疗、智能器械、健康培训、健康讲座服务和健康产业投融资,是基于线上线下共赢服务的大型的健康生活综合性电商平台。</p>
-      <ul>
-        	<li><a href="#">The ISO9001 international quality control standards</a></li>
-            <li><a href="#">The ISO9001 international quality control standards</a></li>
-            <li><a href="#">The ISO9001 international quality control standards</a></li>
-            <li><a href="#">The ISO9001 international quality control standards</a></li>
-            <li><a href="#">The ISO9001 international quality control standards</a></li>
-        </ul>
-    
-  </div>
-</div>
-<div class="m2">
-  <div class="m2_n">
-   	<div class="m2_nt">FEATURED PRODUCTS</div>
-    <div class="m2_nb">
-        	
-      <div class="lanrenzhijia">
-                <div class="tab">
-                    <a href="javascript:;" class="on">Storage Tank </a>
-                    <a href="javascript:;">Heat Exchanger</a>
-                    <a href="javascript:;">Tower </a>
-                    <a href="javascript:;">Spherical Tank</a>
-                  <a href="javascript:;">Skidded Equipment</a>
-                  <a href="javascript:;">Accessories</a>
-                </div>
-                <div class="content">
-                    <ul>
-                        <li style="display:block;">
-                          <div class="mlt">
-                            <div class="mlt_n">
-                            <a href="#"><img src="images/pic.jpg" width="220" height="170" /></a><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                            <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                            <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                            <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                            <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                            <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                            <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div><div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                          </div>
-                        </li>
-                        <li>
-                        	<div class="mlt">
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div><div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                          </div>
-                        
-                      </li>
-                        <li>
-                        	<div class="mlt">
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div><div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                          </div>
-                        
-                      </li>
-                        <li>
-                        	<div class="mlt">
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div><div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                          </div>
-                        
-                      </li>
-                        <li>
-                       	  <div class="mlt">
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div><div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                          </div>
-                        
-                      </li>
-                        <li>
-                        	<div class="mlt">
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic1.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                             <div class="mlt_n">
-                            <img src="images/pic.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div><div class="mlt_n">
-                            <img src="images/pic2.jpg" width="220" height="170" /><p><a href="#">Skidded Equipment</a></p>
-                             </div>
-                          </div>
-                      </li>
-                    </ul>
-                </div>
-           </div>
-	  <script src="js/jquery.min.js"></script>
-      <script src="js/hd.js"></script>
+          
+      </ul>      
     </div>
   </div>
 
+<div class="fr-right" id="fr-right">          
+     <iframe  src="shouye.html" id="iframe" class="iframe" frameborder="0" scrolling="auto"></iframe>
+     <div style="clear:both"></div>     
 </div>
-<div class="m3">
-  <div class="m3_l">
-    <div class="m3_lt">WHAT'S NEW</div>
-    <div class="m3_lb">
-    	<ul>
-        	<li><img src="images/news.jpg" width="120" height="90" /><p><a href="#">The introductin of our new Horizontal tank
-          </a></p><em>May 28, 2015 </em><span>Horizontal tank is an elongate vessel which is used in storing base oil,vegetable oil...</span></li>
-          <li><img src="images/news.jpg" width="120" height="90" /><p><a href="#">The introductin of our new Horizontal tank
-          </a></p><em>May 28, 2015 </em><span>Horizontal tank is an elongate vessel which is used in storing base oil,vegetable oil...</span></li>
-          <li><img src="images/news.jpg" width="120" height="90" /><p><a href="#">The introductin of our new Horizontal tank
-          </a></p><em>May 28, 2015 </em><span>Horizontal tank is an elongate vessel which is used in storing base oil,vegetable oil...</span></li>
-        </ul>
-    </div>
-  </div>
-  <div class="m3_r">
-    <div class="m3_rt">OUR BUSINESSES</div>
-    <div class="m3_rb">
-    	<ul class="clearfix">
-		<li>
-			<div class="photo"><img src="images/npic.jpg" width="230" height="145" /></div>
-			<div class="rsp"></div>
-			<div class="text"><a href=""><h3>三亚婚纱照</h3><div>POST TIME :2014.02.21</div>></a></div>
-		</li>
-		<li>
-			<div class="photo"><img src="images/npic.jpg" width="230" height="145" /></div>
-			<div class="rsp"></div>
-			<div class="text"><a href=""><h3>樱花树婚纱照</h3><div>POST TIME :2014.02.21</div></a></div>
-		</li>
-		<li>
-			<div class="photo"><img src="images/npic.jpg" width="230" height="145" /></div>
-			<div class="rsp"></div>
-			<div class="text"><a href=""><h3>爱丽丝庄园婚纱照</h3><div>POST TIME :2014.02.21</div></a></div>
-		</li>
-		<li>
-			<div class="photo"><img src="images/npic.jpg" width="230" height="145" /></div>
-			<div class="rsp"></div>
-			<div class="text"><a href=""><h3>北戴河婚纱照</h3><div>POST TIME :2014.02.21</div></a></div>
-		</li>		
-	</ul>
-    </div>
-    
-<script src="js/sbhg.js"></script>
 
-    
-    
-    
-    
-    
-    
-  </div>
-</div>
-<div class="m4">
-  <div class="m4_t">OUR CUSTOMERS</div>
-  <div class="m4_b">
-  	<ul>
-		<li><img src="images/class1.jpg"/><div class="txt"><h3>Russian Customers</h3><p>为您铺就成为IT大神的在线学习之路</p></div></li>
-		<li><img src="images/class2.jpg"/><div class="txt"><h3>Russian Customers</h3><p>英语、韩语、日语各类语言课程一网打尽</p></div></li>
-        <li><img src="images/class3.jpg"/><div class="txt"><h3>Russian Customers</h3><p>传授会计师、建筑师等各类考证学习宝典</p></div></li>
-		<li><img src="images/class4.jpg"/><div class="txt"><h3>Russian Customers</h3><p>小学、初中、高中各科课程在线辅导</p></div></li>
-	</ul>
-  </div>
-<script src="js/sbhg1.js"></script>
-</div>
 
 <div class="fnav">
   <div class="fnav_n">
     	<div class="fnav_nll">
-        	<p>QUICK LINKS</p>
+        	<!-- <p>QUICK LINKS</p>
             <a href="#">Storage Tank</a>
             <a href="#">Heat Exchanger</a>
             <a href="#">Tower</a>
             <a href="#">Spherical Tank</a>
             <a href="#">Skidded Equipment</a>
-            <a href="#">Accessories</a>
+            <a href="#">Accessories</a> -->
         </div>
         <div class="fnav_nll">
         	<p>导航</p>
-            <a href="#">首页</a>
-            <a href="#">公司简介</a>
-            <a href="#">产品</a>
-            <a href="#">互动</a>
-            <a href="#">新闻</a>
-            <a href="#">联系我们</a>
+            <a href="index.html">首页</a>
+            <!-- <a href="project1.html" target="_top">相关产品</a>
+            <a href="http://www.djk365.com.cn/" target="_blank">商城</a>
+            <a href="index.html" >关于我们</a>
+            <a href="#">资料下载</a> -->
+            <span class="nav_h1_3" onclick="changeweb2(this,'project1')">相关产品</span>
+            <br/>
+            <a href="http://www.djk365.com.cn/" target="_blank">商城</a>
+            <br/>
+            <span class="nav_h1_3" onclick="changeweb2(this,'about1')">关于我们</span>
+            <br/>
+            <span class="nav_h1_3" onclick="changeweb2(this,'shouye')">资料下载</span>
         </div>
         <div class="fnav_nll">
             <p>联系方式</p>
-            <span class="ftel">010-88595540</span>
-            
+            <span class="ftel">010-88595540</span>           
             <span class="fmail">18612287808@163.com</span>
             <span class="ffax">北京市海淀区青清商厦415室</span>
             <div class="fx">
@@ -481,9 +111,9 @@
 </div>
 <div class="f">
 	<div class="foot">
-	<div class="fl">Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
-	<div class="fr">Powered by Reanod | Sitemap</div>
-    </div>
+    	<div class="fl">Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+    	<div class="fr">技术支持 | 大健康生活网</div>
+  </div>
 </div>
 </body>
 </html>
